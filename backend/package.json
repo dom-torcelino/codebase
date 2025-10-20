@@ -1,7 +1,12 @@
 {
+  "name": "secure-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
   "dependencies": {
-    "@sentry/node": "^10.18.0",
+    "@sentry/node": "^10.20.0",
     "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
@@ -14,7 +19,16 @@
     "mongoose": "^8.19.1",
     "multer": "^2.0.2",
     "nodemailer": "^7.0.9",
+    "qrcode": "^1.5.4",
+    "speakeasy": "^2.0.0",
     "winston": "^3.18.3"
+  },
+  "scripts": {
+    "dev": "nodemon --watch src --exec node src/server.js",
+    "start": "node src/server.js",
+    "test": "NODE_ENV=test jest --runInBand",
+    "db:seed": "node src/seed/seed.js"
+
   },
   "devDependencies": {
     "eslint": "^9.37.0",
