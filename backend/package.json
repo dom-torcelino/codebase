@@ -24,14 +24,15 @@
     "winston": "^3.18.3"
   },
   "scripts": {
-    "dev": "nodemon --watch src --exec node src/server.js",
-    "start": "node src/server.js",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
     "test": "NODE_ENV=test jest --runInBand",
     "db:seed": "node src/seed/seed.js"
-
   },
   "devDependencies": {
-    "eslint": "^9.37.0",
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
     "jest": "^30.2.0",
     "nodemon": "^3.1.10",
     "supertest": "^7.1.4"
