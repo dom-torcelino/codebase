@@ -1,4 +1,3 @@
-import { datacatalog } from "googleapis/build/src/apis/datacatalog";
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
